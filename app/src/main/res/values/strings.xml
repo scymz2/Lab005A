@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Lab005A</string>
+    <string name="app_db_name">FruitList</string>
+</resources>
