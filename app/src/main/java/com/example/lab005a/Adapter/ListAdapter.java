@@ -1,7 +1,6 @@
-package com.example.lab005a;
+package com.example.lab005a.Adapter;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,9 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 
-import androidx.recyclerview.widget.RecyclerView;
-
-import org.w3c.dom.Text;
+import com.example.lab005a.Model.Fruit;
+import com.example.lab005a.R;
 
 import java.util.List;
 

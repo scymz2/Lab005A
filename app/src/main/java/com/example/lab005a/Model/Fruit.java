@@ -1,4 +1,4 @@
-package com.example.lab005a;
+package com.example.lab005a.Model;
 
 public class Fruit {
 

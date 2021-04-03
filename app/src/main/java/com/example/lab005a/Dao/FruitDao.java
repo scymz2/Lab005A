@@ -1,9 +1,11 @@
-package com.example.lab005a;
+package com.example.lab005a.Dao;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
+
+import com.example.lab005a.Model.Fruit;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +17,13 @@ public class FruitDao {
 
     public FruitDao(Context context){
         sqlite = new DBHelper(context);
+    }
+
+    public Cursor getCursor(){
+        SQLiteDatabase db = sqlite.getReadableDatabase();
+        Cursor cursor = db.query("FruitList",new String[] {"_id" , "name", "colour"},
+                null, null,null,null,null);
+        return cursor;
     }
 
     public void insert(String fName, String fColor){

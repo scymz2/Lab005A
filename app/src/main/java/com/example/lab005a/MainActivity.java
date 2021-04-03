@@ -12,12 +12,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.lab005a.Dao.DBHelper;
+import com.example.lab005a.Dao.FruitDao;
+
 public class MainActivity extends AppCompatActivity {
 
     private final String TAG = this.getClass().getName();
     DBHelper mDbHelper;
     SQLiteDatabase mDb;
-    Button button, button2, button3;
+    Button button, button2, button3, button4;
     EditText fruitNameEdit;
     EditText fruitColourEdit;
     EditText resultsEdit;
@@ -80,6 +83,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, SCAActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(i);
+            }
+        });
+
+        button4 = findViewById(R.id.button4);
+        button4.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, RecycleActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(i);
             }
         });

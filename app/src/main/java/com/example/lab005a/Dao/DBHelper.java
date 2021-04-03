@@ -1,4 +1,4 @@
-package com.example.lab005a;
+package com.example.lab005a.Dao;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -6,6 +6,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 import androidx.annotation.Nullable;
+
+import com.example.lab005a.R;
 
 public class DBHelper extends SQLiteOpenHelper {
 
